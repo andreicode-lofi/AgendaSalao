@@ -1,0 +1,24 @@
+﻿@model VagaSalão.Models.Login
+@{
+    ViewData["Title"] = "Login";
+}
+
+<form asp-controller="Home" asp-action="Login" method="post">
+    <nav class="CaixaLogin">
+        <img src="~/login.png" />
+        <h1 class="lblPadrao">Login</h1>
+        <label class="lblLogin">Email</label>
+        <input type="text" name="Email" class="inputPadrao"/>
+        <span asp-validation-for="Email"></span>
+
+        <label class="lblLogin">Senha</label>
+        <input type="password" name="Senha" class="inputPadrao"/>
+        <span asp-validation-for="Senha"></span>
+        <br />
+
+        <input type="submit" value="Entrar" class="btnPadrao" />
+    </nav>
+
+</form>
+
+

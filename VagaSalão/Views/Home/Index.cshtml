@@ -1,0 +1,81 @@
+﻿@model IEnumerable<VagaSalão.Models.Cadastro>
+@{
+    ViewData["Title"] = "Lista de clientes";
+}
+
+<div class="text-center">
+    <h1 class="TituloIndex">Lista de clientes</h1>
+</div>
+
+<form asp-controller="Home" asp-action="index">
+    <p>
+        Data: <input type="date" name="dataAtendimento"/>
+        <input type="submit" valeu="Buscar" />
+    </p>
+</form>
+
+<table class="table">
+    <thead class="TituloTabela">
+        <tr >
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SobreNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAtendimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Procedimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeProfissional)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody class="CorpoTabela" >
+        @foreach(var item in Model)
+        {
+            <tr class="CorpoTabela">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SobreNome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataAtendimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Procedimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.NomeProfissional)
+                </td>
+                <td>
+                    <a asp-action="Create" asp-route-id="@item.Id">Cadastrar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+

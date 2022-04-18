@@ -1,0 +1,46 @@
+﻿@model VagaSalão.Models.Cadastro
+@{
+    ViewData["Title"] = "Cadastro de clientes";
+}
+
+<h1 class="TituloCadastro">Agendamento de serviços</h1>
+
+<form asp-controller="Home" asp-action="Create">
+    <div>
+        <label asp-for="Nome" class="lblPadrao">Nome</label>
+        <input asp-for="Nome" type="text" id="Nome" class="inputCadastro" />
+        <span asp-validation-for="Nome"></span>
+    </div>
+    <div>
+        <label asp-for="SobreNome" class="lblPadrao">Sobre Nome</label>
+        <input asp-for="SobreNome" type="text" id="SobreNome" class="inputCadastro" />
+        <span asp-validation-for="SobreNome"></span>
+    </div>
+    <div>
+        <label asp-for="Telefone" class="lblPadrao">Telefone</label>
+        <input asp-for="Telefone" type="tel" id="Telefone"  class="inputCadastro"/>
+        <span asp-validation-for="Telefone"></span>
+    </div>
+    <div>
+        <label asp-for="Email" class="lblPadrao">Emal</label>
+        <input asp-for="Email" type="text" id="Email" class="inputCadastro" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="DataAtendimento" class="lblPadrao">Data do atendimento</label>
+        <input asp-for="DataAtendimento" type="text" class="inputCadastro" placeholder="Ex.: 00/00/0000 00:00:00" />
+        <span asp-validation-for="DataAtendimento"></span>
+    </div>
+    <div>
+        <label asp-for="Procedimento" class="lblPadrao">Procedimento</label>
+        <input asp-for="Procedimento" type="text" id="Procedimento" class="inputCadastro" />
+        <span asp-validation-for="Procedimento"></span>
+    </div>
+      <div>
+        <label asp-for="NomeProfissional" class="lblPadrao">Nome do profossional</label>
+        <input asp-for="NomeProfissional" type="text" id="NomeProfissional" class="inputCadastro" />
+        <span asp-validation-for="NomeProfissional"></span>
+    </div>
+
+    <input asp-controller="Home" asp-action="Create" type="submit" value="Cadastra" class="btnPadrao" />
+</form>

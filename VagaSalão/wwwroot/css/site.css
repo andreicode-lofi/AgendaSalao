@@ -1,0 +1,141 @@
+html {
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-image: url("/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    font-family: 'Barlow Condensed', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/*MENU*/
+.textMenu {
+    color: #1affd1;
+    font-size: 25px;
+}
+
+.inputPadrao {
+    background: transparent;
+    color:azure;
+    border-radius: 25px;
+    border-color:azure;
+
+}
+
+/*Login*/
+.CaixaLogin {
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.inputSenha {
+    background: transparent;
+    color: azure;
+    border-radius: 25px;
+    border-color: azure;
+  
+}
+
+.btnPadrao {
+    margin-top: 30px;
+    color: azure;
+    background-color: dimgray;
+    border-radius: 20px;
+    width: 20%;
+    transition: 1s all;
+}
+
+.btnPadrao:hover {
+    background-color: #1affd1;
+    transform: scale(1.2);
+}
+
+.lblLogin {
+    display: block;
+    color: #1affd1;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.lblPadrao {
+    color: #1affd1;
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
+
+/*Index*/
+.text-center {
+    font-size: 50px;
+    color: #1affd1;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 60px;
+}
+
+.TituloTabela {
+    color: #1affd1;
+    margin-top: 90px;
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 45%;
+}
+
+.CorpoTabela {
+    color: #1affd1;
+    font-size: 13px;
+}
+
+.table a {
+    color: #1affd1;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*Cadastro*/
+
+.TituloCadastro {
+    margin-top: 35px;
+    color: #1affd1;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.inputCadastro {
+    background: transparent;
+    color: azure;
+    border-radius: 25px;
+    border-color: azure;
+   
+    width: 45%;
+}
+
+
+footer{
+    background-color:transparent;
+    text-align: center;
+    color:aliceblue;
+}
+
+.rodaPe{
+    color: azure;
+}

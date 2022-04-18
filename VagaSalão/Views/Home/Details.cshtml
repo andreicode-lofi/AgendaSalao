@@ -1,0 +1,54 @@
+﻿@model VagaSalão.Models.Cadastro
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<div>
+    <form asp-action="Details">
+        <dl>
+            <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.SobreNome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SobreNome)
+            </dd>
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.Telefone)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Telefone)
+            </dd>
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.DataAtendimento)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DataAtendimento)
+            </dd>
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.Procedimento)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Procedimento)
+            </dd>
+             <dt class="lblPadrao">
+                @Html.DisplayNameFor(model => model.NomeProfissional)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.NomeProfissional)
+            </dd>
+        </dl>
+    </form>
+</div>
